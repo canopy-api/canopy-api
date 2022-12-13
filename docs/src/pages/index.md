@@ -11,6 +11,6 @@ Learn how to get started querying for Amazon data in minutes. Sign up, copy your
 ## Quick start
 
 1. [Sign up](https://www.canopyapi.co/signup) for a new Canopy API account or [sign in](https://www.canopyapi.co/signin) if you're a regular.
-2. After signing in copy paste your API key, you'll need this later. Remember not to share this key.
-3. Add the API key to a `CANOPY-API-KEY` header when making requests to the Canopy GraphQL endpoint: `https://graphql.canopyapi.co/`
-4. Check out our examples for more details integrating Canopy API with popular libraries such as GraphQL Yoga, Apollo Server, GraphQL Codegen, and Hoppscotch.
+1. After signing in copy paste your API key, you'll need this later. Remember not to share this key.
+1. Make GraphQL requests to `https://graphql.canopyapi.co/` and add a request header for `CANOPY-API-KEY` using your API key.
+1. Check out our examples for more details integrating Canopy API with popular libraries such as GraphQL Yoga, Apollo Server, GraphQL Codegen, and Hoppscotch.
