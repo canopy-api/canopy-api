@@ -1,0 +1,30 @@
+[
+  {
+    "v": 1,
+    "name": "Canopy API",
+    "folders": [],
+    "requests": [
+      {
+        "v": 2,
+        "name": "Example Amazon Product",
+        "url": "https://graphql.canopyapi.co/",
+        "query": "query amazonProduct {\n  amazonProduct(input: {asin: \"B0B3JBVDYP\"}) {\n    __typename\n    title\n    brand\n    mainImageUrl\n    reviewsTotal\n    ratingsTotal\n    rating\n    price {\n      formatted\n    }\n    reviewsPaginated(input: {page: 1}) {\n      reviews {\n        id\n        title\n        body\n        imageUrls\n        videos {\n          posterImageUrl\n          url\n        }\n      }\n      pageInfo {\n        currentPage\n        totalPages\n        hasNextPage\n        hasPrevPage\n      }\n    }\n  }\n}\n",
+        "headers": [
+          {
+            "key": "CANOPY-API-KEY",
+            "value": "<YOUR-API-KEY>",
+            "active": true
+          }
+        ],
+        "variables": "",
+        "auth": {
+          "authType": "none",
+          "authActive": true,
+          "addTo": "Headers",
+          "key": "",
+          "value": ""
+        }
+      }
+    ]
+  }
+]
