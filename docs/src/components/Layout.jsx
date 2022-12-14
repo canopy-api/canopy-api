@@ -20,23 +20,23 @@ const navigation = [
   {
     title: 'Integrations',
     links: [
-      { title: 'GraphQL Modules', href: '/docs/integrations/graphql-modules' },
+      { title: 'GraphQL Modules', href: '/integrations/graphql-modules' },
     ],
   },
   {
     title: 'Examples',
     links: [
-      { title: 'GraphQL Yoga', href: '/docs/examples/graphql-yoga' },
-      { title: 'Apollo Server', href: '/docs/examples/apollo-server' },
-      { title: 'GraphQL Codegen', href: '/docs/examples/graphql-codegen' },
-      { title: 'Hoppscotch', href: '/docs/examples/hoppscotch' },
+      { title: 'GraphQL Yoga', href: '/examples/graphql-yoga' },
+      { title: 'Apollo Server', href: '/examples/apollo-server' },
+      { title: 'GraphQL Codegen', href: '/examples/graphql-codegen' },
+      { title: 'Hoppscotch', href: '/examples/hoppscotch' },
     ],
   },
   {
     title: 'Contributing',
     links: [
-      { title: 'How to contribute', href: '/docs/contributing/how-to-contribute' },
-      { title: 'Affiliate Programs', href: '/docs/contributing/affiliate-programs' },
+      { title: 'How to contribute', href: '/contributing/how-to-contribute' },
+      { title: 'Affiliate Programs', href: '/contributing/affiliate-programs' },
     ],
   },
 ]
