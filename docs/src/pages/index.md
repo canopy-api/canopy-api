@@ -1,7 +1,7 @@
 ---
 title: Getting started
-pageTitle: CacheAdvance - Never miss the cache again.
-description: Cache every single thing your app could ever do ahead of time, so your code never even has to run at all.
+pageTitle: Getting started with Amazon Data provided by Canopy API
+description: Connect to a Canopy API endpoint in minutes and start fetching Amazon data immediately.
 ---
 
 Learn how to get started querying for Amazon data in minutes. Sign up, copy your API key, and get to work!{% .lead %}
