@@ -6,7 +6,6 @@
     "start": "next start"
   },
   "dependencies": {
-    "@docsearch/react": "^3.3.0",
     "@headlessui/react": "^1.7.5",
     "@markdoc/markdoc": "latest",
     "@markdoc/next.js": "latest",
