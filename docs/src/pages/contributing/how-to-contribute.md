@@ -9,7 +9,7 @@ Our documentation, integrations and examples are [open source](https://github.co
 
 ## Documentation
 
-Coming Soon.
+These docs are fully open-source and can be found [in Github here](https://github.com/canopy-api/canopy-api/tree/main/docs).
 
 ## Integrations
 

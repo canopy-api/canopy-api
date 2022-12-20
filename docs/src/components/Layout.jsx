@@ -11,8 +11,12 @@ import { Prose } from '@/components/Prose'
 const navigation = [
   {
     title: 'Introduction',
+    links: [{ title: 'Getting started', href: '/' }],
+  },
+  {
+    title: 'Try',
     links: [
-      { title: 'Getting started', href: '/' },
+      { title: 'GraphQL Playground', href: 'https://graphql.canopyapi.co/' },
     ],
   },
   {
@@ -76,15 +80,22 @@ function Header({ navigation }) {
       <div className="relative flex flex-grow basis-0 items-center">
         <Link href="/" aria-label="Home page">
           <>
-          <div className='lg:hidden'><Logomark /></div>
-          <div className='hidden lg:block'><Logo /></div>
+            <div className="lg:hidden">
+              <Logomark />
+            </div>
+            <div className="hidden lg:block">
+              <Logo />
+            </div>
           </>
         </Link>
       </div>
-      <div className="-my-5 mr-6 sm:mr-8 md:mr-0">
-      </div>
+      <div className="-my-5 mr-6 sm:mr-8 md:mr-0"></div>
       <div className="relative flex basis-0 justify-end gap-6 sm:gap-8 md:flex-grow">
-        <Link href="https://github.com/canopy-api/canopy-api" className="group" aria-label="GitHub">
+        <Link
+          href="https://github.com/canopy-api/canopy-api"
+          className="group"
+          aria-label="GitHub"
+        >
           <GitHubIcon className="h-6 w-6 fill-slate-400 group-hover:fill-slate-500 dark:group-hover:fill-slate-300" />
         </Link>
       </div>
