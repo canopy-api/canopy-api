@@ -28,6 +28,7 @@ const navigation = [
   {
     title: 'Examples',
     links: [
+      { title: 'Fetch (JavaScript)', href: '/examples/fetch' },
       { title: 'GraphQL Yoga', href: '/examples/graphql-yoga' },
       { title: 'Apollo Server', href: '/examples/apollo-server' },
       { title: 'GraphQL Codegen', href: '/examples/graphql-codegen' },
