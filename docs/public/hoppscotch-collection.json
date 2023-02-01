@@ -8,21 +8,105 @@
         "v": 2,
         "name": "Example Amazon Product",
         "url": "https://graphql.canopyapi.co/",
-        "query": "query amazonProduct {\n  amazonProduct(input: {asin: \"B0B3JBVDYP\"}) {\n    __typename\n    title\n    brand\n    mainImageUrl\n    reviewsTotal\n    ratingsTotal\n    rating\n    price {\n      formatted\n    }\n    reviewsPaginated(input: {page: 1}) {\n      reviews {\n        id\n        title\n        body\n        imageUrls\n        videos {\n          posterImageUrl\n          url\n        }\n      }\n      pageInfo {\n        currentPage\n        totalPages\n        hasNextPage\n        hasPrevPage\n      }\n    }\n  }\n}\n",
+        "query": "\n      query amazonProduct {\n        amazonProduct(input: { asinLookup: {asin: \"B0BDHWDR12\"} }) {\n          __typename\n          title\n          brand\n          mainImageUrl\n          reviewsTotal\n          ratingsTotal\n          rating\n          price {\n            display\n          }\n        }\n      }\n    ",
         "headers": [
           {
-            "key": "CANOPY-API-KEY",
+            "active": true,
             "value": "<YOUR-API-KEY>",
-            "active": true
+            "key": "CANOPY-API-KEY"
           }
         ],
         "variables": "",
         "auth": {
+          "value": "",
+          "key": "",
           "authType": "none",
           "authActive": true,
-          "addTo": "Headers",
+          "addTo": "Headers"
+        }
+      },
+      {
+        "v": 2,
+        "name": "Example Amazon Product (UK)",
+        "url": "https://graphql.canopyapi.co/",
+        "query": "\n      query amazonProduct {\n        amazonProduct(input: { asinLookup: {asin: \"B0BDJ37NF5\", domain: UK} }) {\n          __typename\n          title\n          brand\n          mainImageUrl\n          reviewsTotal\n          ratingsTotal\n          rating\n          price {\n            display\n          }\n        }\n      }\n    ",
+        "headers": [
+          {
+            "active": true,
+            "value": "<YOUR-API-KEY>",
+            "key": "CANOPY-API-KEY"
+          }
+        ],
+        "variables": "",
+        "auth": {
+          "value": "",
           "key": "",
-          "value": ""
+          "authType": "none",
+          "authActive": true,
+          "addTo": "Headers"
+        }
+      },
+      {
+        "v": 2,
+        "name": "Example Amazon Search Results",
+        "url": "https://graphql.canopyapi.co/",
+        "query": "query AmazonSearchResults {\n  amazonProductSearchResults(input:{searchTerm:\"ipad\"}) {\n    productResults {\n      results {\n        title\n        price {\n          display\n        }\n      }\n    }\n  }\n}",
+        "headers": [
+          {
+            "active": true,
+            "value": "<YOUR-API-KEY>",
+            "key": "CANOPY-API-KEY"
+          }
+        ],
+        "variables": "",
+        "auth": {
+          "value": "",
+          "key": "",
+          "authType": "none",
+          "authActive": true,
+          "addTo": "Headers"
+        }
+      },
+      {
+        "v": 2,
+        "name": "Example Amazon Category Taxonomy",
+        "url": "https://graphql.canopyapi.co/",
+        "query": "query AmazonCategoryTaxonomy {\n  amazonProductCategoryTaxonomy {\n    name\n  }\n}",
+        "headers": [
+          {
+            "active": true,
+            "value": "<YOUR-API-KEY>",
+            "key": "CANOPY-API-KEY"
+          }
+        ],
+        "variables": "",
+        "auth": {
+          "value": "",
+          "key": "",
+          "authType": "none",
+          "authActive": true,
+          "addTo": "Headers"
+        }
+      },
+      {
+        "v": 2,
+        "name": "Example Amazon Category",
+        "url": "https://graphql.canopyapi.co/",
+        "query": "query AmazonProductCategory {\n  amazonProductCategory(input: {categoryId:\"4991426011\"}) {\n    id\n    name\n    productResults {\n      results {\n        title\n      }\n    }\n  }\n}",
+        "headers": [
+          {
+            "active": true,
+            "value": "<YOUR-API-KEY>",
+            "key": "CANOPY-API-KEY"
+          }
+        ],
+        "variables": "",
+        "auth": {
+          "value": "",
+          "key": "",
+          "authType": "none",
+          "authActive": true,
+          "addTo": "Headers"
         }
       }
     ]
