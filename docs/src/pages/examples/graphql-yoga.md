@@ -32,6 +32,9 @@ const remoteExecutor = buildHTTPExecutor({
 });
 ```
 
+3. Start the Next.js server: `npm run dev`
+4. Open the GraphQL Playground at `http://localhost:3000/api/graphql`
+
 ## GraphQL API Route Example
 
 To add the Canopy API schema to an existing Next.js GraphQL API Route with GraphQL Yoga, you will need to use `@graphql-tools/stitch` and add the `Authorization` header. Here is an example:
