@@ -14,25 +14,23 @@ const navigation = [
     links: [{ title: 'Getting started', href: '/' }],
   },
   {
-    title: 'Try',
+    title: 'GraphQL',
     links: [
-      { title: 'GraphQL Playground', href: 'https://graphql.canopyapi.co/' },
-    ],
-  },
-  {
-    title: 'Integrations',
-    links: [
-      { title: 'GraphQL Modules', href: '/integrations/graphql-modules' },
-    ],
-  },
-  {
-    title: 'Examples',
-    links: [
+      { title: 'Playground', href: 'https://graphql.canopyapi.co/' },
       { title: 'Fetch (JavaScript)', href: '/examples/fetch' },
       { title: 'GraphQL Yoga', href: '/examples/graphql-yoga' },
       { title: 'Apollo Server', href: '/examples/apollo-server' },
-      { title: 'GraphQL Codegen', href: '/examples/graphql-codegen' },
       { title: 'Hoppscotch', href: '/examples/hoppscotch' },
+    ],
+  },
+  {
+    title: 'REST',
+    links: [
+      { title: 'Playground', href: 'https://endpoint.canopyapi.co/swagger' },
+      // { title: 'Fetch (JavaScript)', href: '/examples/fetch' },
+      // { title: 'GraphQL Yoga', href: '/examples/graphql-yoga' },
+      // { title: 'Apollo Server', href: '/examples/apollo-server' },
+      // { title: 'Hoppscotch', href: '/examples/hoppscotch' },
     ],
   },
   {
