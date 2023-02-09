@@ -1,7 +1,6 @@
-import { buildHTTPExecutor } from "@graphql-tools/executor-http";
-import { schemaFromExecutor } from "@graphql-tools/wrap";
 import { createYoga } from "graphql-yoga";
-import { stitchSchemas } from "@graphql-tools/stitch";
+import { buildHTTPExecutor } from "@graphql-tools/executor-http";
+import { useExecutor } from "@graphql-tools/executor-yoga";
 
 const CANOPY_GRAPHQL_ENDPOINT = "https://endpoint.canopyapi.co/";
 
@@ -19,17 +18,10 @@ export const config = {
   },
 };
 
-const canopySubschema = {
-  schema: await schemaFromExecutor(remoteExecutor),
-  executor: remoteExecutor,
-};
-
-const schema = stitchSchemas({
-  subschemas: [canopySubschema],
-});
-
 export default createYoga({
-  schema,
+  plugins: [
+    useExecutor(remoteExecutor),
+  ],
   // Needed to be defined explicitly because our endpoint lives at a different path other than `/graphql`
   graphqlEndpoint: "/api/graphql",
 });

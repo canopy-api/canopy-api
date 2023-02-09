@@ -9,10 +9,6 @@ An example using our GraphQL API with [GraphQL Yoga](https://the-guild.dev/graph
 
 ---
 
-{% callout %}
-**Note**: Using GraphQL Yoga with Next.js for this example requires using top-level await, which is [not currently supported by SWC](https://github.com/vercel/next.js/issues/31054). The example repository provides the `.babelrc` and `next.config.js` changes to enable top-level await with Babel and Webpack 5.
-{% /callout %}
-
 ## Quick Start
 
 1. Create your application using `create-next-app`
@@ -37,13 +33,12 @@ const remoteExecutor = buildHTTPExecutor({
 
 ## GraphQL API Route Example
 
-To add the Canopy API schema to an existing Next.js GraphQL API Route with GraphQL Yoga, you will need to use `@graphql-tools/stitch` and add the `Authorization` header. Here is an example:
+To add the Canopy API schema to an existing Next.js GraphQL API Route with GraphQL Yoga, you will need to use `@graphql-tools/executor-yoga` and add the `Authorization` header. Here is an example:
 
 ```typescript
 import { buildHTTPExecutor } from '@graphql-tools/executor-http'
-import { schemaFromExecutor } from '@graphql-tools/wrap'
 import { createYoga } from 'graphql-yoga'
-import { stitchSchemas } from '@graphql-tools/stitch'
+import { useExecutor } from "@graphql-tools/executor-yoga"
 
 const CANOPY_GRAPHQL_ENDPOINT = 'https://endpoint.canopyapi.co/'
 
@@ -61,18 +56,11 @@ export const config = {
   },
 }
 
-const canopySubschema = {
-  schema: await schemaFromExecutor(remoteExecutor),
-  executor: remoteExecutor,
-}
-
-const schema = stitchSchemas({
-  subschemas: [canopySubschema],
-})
-
 export default createYoga({
-  schema,
+  plugins: [
+    useExecutor(remoteExecutor),
+  ],
   // Needed to be defined explicitly because our endpoint lives at a different path other than `/graphql`
-  graphqlEndpoint: '/api/graphql',
-})
+  graphqlEndpoint: "/api/graphql",
+});
 ```
