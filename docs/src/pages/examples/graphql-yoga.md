@@ -5,7 +5,7 @@ description: An example using our GraphQL API with [GraphQL Yoga](https://the-gu
 
 An example using our GraphQL API with [GraphQL Yoga](https://the-guild.dev/graphql/yoga-server)
 
-[Source Repository](https://github.com/canopy-api/canopy-api/tree/main/docs/examples/next-with-graphql-yoga)
+[Source Repository](https://github.com/canopy-api/canopy-api/tree/main/examples/next-with-graphql-yoga)
 
 ---
 
@@ -38,7 +38,7 @@ To add the Canopy API schema to an existing Next.js GraphQL API Route with Graph
 ```typescript
 import { buildHTTPExecutor } from '@graphql-tools/executor-http'
 import { createYoga } from 'graphql-yoga'
-import { useExecutor } from "@graphql-tools/executor-yoga"
+import { useExecutor } from '@graphql-tools/executor-yoga'
 
 const CANOPY_GRAPHQL_ENDPOINT = 'https://endpoint.canopyapi.co/'
 
@@ -57,10 +57,8 @@ export const config = {
 }
 
 export default createYoga({
-  plugins: [
-    useExecutor(remoteExecutor),
-  ],
+  plugins: [useExecutor(remoteExecutor)],
   // Needed to be defined explicitly because our endpoint lives at a different path other than `/graphql`
-  graphqlEndpoint: "/api/graphql",
-});
+  graphqlEndpoint: '/api/graphql',
+})
 ```

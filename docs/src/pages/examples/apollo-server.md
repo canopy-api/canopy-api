@@ -5,7 +5,7 @@ description: An example using our GraphQL API with [Apollo Server](https://www.a
 
 An example using our GraphQL API with [Apollo Server](https://www.apollographql.com/docs/apollo-server/)
 
-[Source Repository](https://github.com/canopy-api/canopy-api/tree/main/docs/examples/next-with-apollo-server)
+[Source Repository](https://github.com/canopy-api/canopy-api/tree/main/examples/next-with-apollo-server)
 
 ---
 
