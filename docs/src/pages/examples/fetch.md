@@ -12,12 +12,12 @@ A basic example using the browser's [fetch API](https://developer.mozilla.org/en
 ```javascript
 const query = `
   query amazonProduct {
-    amazonProduct(input: {asin: \"B0B3JBVDYP\"}) {
+    amazonProduct(input: {asin: "B0B3JBVDYP"}) {
       title
       mainImageUrl
       rating
       price {
-        formatted
+        display
       }
     }
   }
@@ -30,7 +30,7 @@ const response = await fetch('https://graphql.canopyapi.co/', {
     'Content-Type': 'application/json',
     'API-KEY': '<YOUR_API_KEY>',
   },
-  body: JSON.stringify(data),
+  body: JSON.stringify({query}),
 })
 return response.json()
 ```
