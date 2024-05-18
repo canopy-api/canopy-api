@@ -13,8 +13,8 @@ url = 'https://graphql.canopyapi.co/'
 
 # Define the GraphQL query
 query = """
-query amazonProduct {
-  amazonProduct(input: {asin: "B0B3JBVDYP"}) {
+query amazonProduct($asin: String!) {
+  amazonProduct(input: {asin: $asin}) {
     title
     mainImageUrl
     rating
@@ -27,12 +27,17 @@ query amazonProduct {
 
 headers = {
     'Content-Type': 'application/json',
-    'API-KEY': '<YOUR API KEY>',
+    'API-KEY': '<YOUR_API_KEY>',
+}
+
+variables = {
+  'asin': 'B0B3JBVDYP',
 }
 
 # Define the request payload
 payload = {
-    'query': query
+    'query': query,
+    'variables': variables
 }
 
 # Send the POST request to the GraphQL endpoint
