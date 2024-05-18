@@ -20,6 +20,7 @@ const navigation = [
       { title: 'Fetch (JavaScript)', href: '/examples/fetch' },
       { title: 'GraphQL Yoga', href: '/examples/graphql-yoga' },
       { title: 'Apollo Server', href: '/examples/apollo-server' },
+      { title: 'Python', href: '/examples/python' },
       { title: 'Hoppscotch', href: '/examples/hoppscotch' },
     ],
   },
