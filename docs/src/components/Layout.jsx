@@ -14,6 +14,14 @@ const navigation = [
     links: [{ title: 'Getting started', href: '/' }],
   },
   {
+    title: 'REST',
+    links: [
+      { title: 'OpenAPI Spec', href: 'https://rest.canopyapi.co/' },
+      { title: 'Fetch (JavaScript)', href: '/examples/rest-fetch' },
+      { title: 'Python', href: '/examples/rest-python' },
+    ],
+  },
+  {
     title: 'GraphQL',
     links: [
       { title: 'Playground', href: 'https://graphql.canopyapi.co/' },
@@ -24,16 +32,6 @@ const navigation = [
       { title: 'Hoppscotch', href: '/examples/hoppscotch' },
     ],
   },
-  // {
-  //   title: 'REST',
-  //   links: [
-  //     { title: 'Playground', href: 'https://endpoint.canopyapi.co/swagger' },
-  //     // { title: 'Fetch (JavaScript)', href: '/examples/fetch' },
-  //     // { title: 'GraphQL Yoga', href: '/examples/graphql-yoga' },
-  //     // { title: 'Apollo Server', href: '/examples/apollo-server' },
-  //     // { title: 'Hoppscotch', href: '/examples/hoppscotch' },
-  //   ],
-  // },
   {
     title: 'Contributing',
     links: [
