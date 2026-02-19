@@ -33,6 +33,13 @@ const navigation = [
     ],
   },
   {
+    title: 'AI & LLMs',
+    links: [
+      { title: 'MCP Server', href: '/ai/mcp' },
+      { title: 'Canopy Skills', href: '/ai/skills' },
+    ],
+  },
+  {
     title: 'Contributing',
     links: [
       { title: 'How to contribute', href: '/contributing/how-to-contribute' },
