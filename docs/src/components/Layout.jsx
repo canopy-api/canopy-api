@@ -40,6 +40,12 @@ const navigation = [
     ],
   },
   {
+    title: 'Recipes',
+    links: [
+      { title: 'Coupon Finder', href: '/recipes/coupon-finder' },
+    ],
+  },
+  {
     title: 'Contributing',
     links: [
       { title: 'How to contribute', href: '/contributing/how-to-contribute' },
