@@ -17,3 +17,17 @@ Learn how to get started querying for Amazon data in minutes using either our Gr
    - **REST**: Make requests to `https://rest.canopyapi.co/api/amazon/product` with a `GET` method
    - Both require an `API-KEY` header or `Authorization: Bearer YOUR_API_KEY` header
 1. Check out our examples for more details integrating Canopy API with popular libraries and both GraphQL (GraphQL Yoga, Apollo Server, Hoppscotch) and REST (Python, JavaScript fetch) approaches.
+
+---
+
+## Full API documentation
+
+Complete API documentation is available for both the REST and GraphQL APIs:
+
+- **REST API**: Browse the full OpenAPI spec at [rest.canopyapi.co](https://rest.canopyapi.co/)
+
+[![OpenAPI Spec](/images/open-api-spec.png)](https://rest.canopyapi.co/)
+
+- **GraphQL API**: Explore the interactive GraphQL playground at [graphql.canopyapi.co](https://graphql.canopyapi.co/) — open the **Docs** panel in the top left to browse all available queries, types, and fields.
+
+[![GraphQL Playground](/images/gql-playground.png)](https://graphql.canopyapi.co/)
