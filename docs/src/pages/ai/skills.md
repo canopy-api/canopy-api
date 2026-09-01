@@ -35,5 +35,5 @@ Skills are structured capability modules rather than raw API wrappers. They incl
 This means you describe what you want in natural language and the agent handles the API calls — no manual query construction required.
 
 {% callout %}
-**Tip**: If you want direct tool-level access for AI assistants like Claude Desktop, see the [Canopy API MCP](/ai/mcp) server instead.
+**Tip**: If you want direct tool-level access for AI assistants like Claude, see the [Canopy API MCP](/ai/mcp) server instead.
 {% /callout %}
