@@ -6,7 +6,7 @@ export function Prose({ as: Component = 'div', className, ...props }) {
       className={clsx(
         className,
         'prose prose-slate max-w-none break-words dark:prose-invert dark:text-slate-400',
-        'prose-code:break-all',
+        'prose-code:[overflow-wrap:anywhere]',
         // headings
         'prose-headings:scroll-mt-28 prose-headings:font-display prose-headings:font-normal lg:prose-headings:scroll-mt-[8.5rem]',
         // lead
