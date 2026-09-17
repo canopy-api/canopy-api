@@ -81,7 +81,7 @@ function Header({ navigation }) {
   return (
     <header
       className={clsx(
-        'sticky top-0 z-50 flex flex-wrap items-center justify-between bg-white px-6 py-5 shadow-md shadow-slate-900/5 transition duration-500 dark:shadow-none lg:px-8',
+        'sticky top-0 z-50 flex w-full flex-wrap items-center justify-between bg-white px-6 py-5 shadow-md shadow-slate-900/5 transition duration-500 dark:shadow-none lg:px-8',
         isScrolled
           ? 'dark:bg-slate-900/95 dark:backdrop-blur dark:[@supports(backdrop-filter:blur(0))]:bg-slate-900/75'
           : 'dark:bg-transparent'
@@ -199,7 +199,7 @@ export function Layout({ children, title, tableOfContents }) {
             />
           </div>
         </div>
-        <div className="min-w-0 max-w-2xl flex-auto px-6 py-16 sm:px-4 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16">
+        <div className="min-w-0 max-w-2xl flex-auto overflow-x-hidden px-6 py-16 sm:px-4 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16">
           <article>
             {(title || section) && (
               <header className="mb-9 space-y-1">
