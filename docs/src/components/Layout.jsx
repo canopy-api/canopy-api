@@ -17,6 +17,7 @@ const navigation = [
     title: 'REST',
     links: [
       { title: 'OpenAPI Spec', href: 'https://rest.canopyapi.co/' },
+      { title: 'Postman', href: '/examples/rest-postman' },
       { title: 'Fetch (JavaScript)', href: '/examples/rest-fetch' },
       { title: 'Python', href: '/examples/rest-python' },
     ],
@@ -25,6 +26,7 @@ const navigation = [
     title: 'GraphQL',
     links: [
       { title: 'Playground', href: 'https://graphql.canopyapi.co/' },
+      { title: 'Postman', href: '/examples/graphql-postman' },
       { title: 'Fetch (JavaScript)', href: '/examples/fetch' },
       { title: 'GraphQL Yoga', href: '/examples/graphql-yoga' },
       { title: 'Apollo Server', href: '/examples/apollo-server' },

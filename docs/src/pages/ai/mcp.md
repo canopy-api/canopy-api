@@ -113,6 +113,12 @@ npx -y @modelcontextprotocol/inspector@latest
 
 In the inspector, set the transport to **Streamable HTTP**, enter `https://mcp.canopyapi.co/mcp`, and connect. The inspector will walk you through the OAuth sign-in, or you can supply an API key header instead.
 
+## Try in Postman
+
+A public [Postman MCP collection](https://www.postman.com/rhin-0-s-team/canopy-api-amazon-product-data-api-rest-graphql-mcp/collection/yuf9wxs/canopy-api-mcp-server) is available for sending MCP requests outside of an assistant. Add your API key as a header if the client does not use OAuth — see [Authentication](#authentication).
+
+The same [Postman workspace](https://www.postman.com/rhin-0-s-team/canopy-api-amazon-product-data-api-rest-graphql-mcp/overview) also includes REST and GraphQL collections.
+
 ## Self-hosting
 
 The server is open source and runs on Cloudflare Workers. Self-hosting is optional — the hosted server at `https://mcp.canopyapi.co/mcp` is the recommended path for most users.
