@@ -40,9 +40,9 @@ const themeScript = `
 
 export default function Document() {
   return (
-    <Html className="antialiased [font-feature-settings:'ss01']" lang="en">
+    <Html className="w-full overflow-x-clip antialiased [font-feature-settings:'ss01']" lang="en">
       <Head />
-      <body className="bg-white dark:bg-slate-900">
+      <body className="w-full bg-white dark:bg-slate-900">
         <Main />
         <NextScript />
       </body>
