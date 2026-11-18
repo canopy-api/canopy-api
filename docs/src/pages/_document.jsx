@@ -38,10 +38,48 @@ const themeScript = `
   isDarkMode.addEventListener('change', () => updateThemeWithoutTransitions())
 `
 
+// Same Organization node as www.canopyapi.co (shared @id), so crawlers tie the
+// docs to the main site's entity.
+const organizationJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  '@id': 'https://www.canopyapi.co/#organization',
+  name: 'Canopy API',
+  url: 'https://www.canopyapi.co',
+  logo: {
+    '@type': 'ImageObject',
+    url: 'https://www.canopyapi.co/logo-dt.png',
+    width: 720,
+    height: 200,
+  },
+  image: 'https://www.canopyapi.co/logo-dt.png',
+  description:
+    'Canopy API provides real-time Amazon product data over REST, GraphQL, and MCP: search, pricing, reviews, best sellers, deals, and category data.',
+  email: 'support@canopyapi.co',
+  contactPoint: {
+    '@type': 'ContactPoint',
+    contactType: 'customer support',
+    email: 'support@canopyapi.co',
+    url: 'https://www.canopyapi.co',
+  },
+  sameAs: [
+    'https://github.com/canopy-api',
+    'https://www.linkedin.com/company/canopy-api/',
+    'https://twitter.com/canopyapi',
+  ],
+}
+
 export default function Document() {
   return (
     <Html className="w-full overflow-x-clip antialiased [font-feature-settings:'ss01']" lang="en">
-      <Head />
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationJsonLd).replace(/</g, '\\u003c'),
+          }}
+        />
+      </Head>
       <body className="w-full bg-white dark:bg-slate-900">
         <Main />
         <NextScript />
