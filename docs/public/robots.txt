@@ -1,0 +1,8 @@
+# Search engines and AI crawlers are welcome on the whole site.
+User-agent: *
+Allow: /
+
+Sitemap: https://docs.canopyapi.co/sitemap.xml
+
+# LLM-friendly index: https://docs.canopyapi.co/llms.txt
+# Every page is also served as Markdown at <page-url>.md

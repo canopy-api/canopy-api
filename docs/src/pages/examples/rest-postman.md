@@ -1,6 +1,6 @@
 ---
-title: Postman
-description: Try the Canopy REST API using the public Postman collection.
+title: REST API Postman collection
+description: Try the Canopy REST API for Amazon product data without writing code, using the public Postman collection.
 ---
 
 A public [Postman REST collection](https://www.postman.com/rhin-0-s-team/canopy-api-amazon-product-data-api-rest-graphql-mcp/collection/n2edm6b/rest) is available for sending requests without writing code.

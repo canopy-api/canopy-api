@@ -7,54 +7,7 @@ import { Logo, Logomark } from '@/components/Logo'
 import { MobileNavigation } from '@/components/MobileNavigation'
 import { Navigation } from '@/components/Navigation'
 import { Prose } from '@/components/Prose'
-
-const navigation = [
-  {
-    title: 'Introduction',
-    links: [{ title: 'Getting started', href: '/' }],
-  },
-  {
-    title: 'REST',
-    links: [
-      { title: 'OpenAPI Spec', href: 'https://rest.canopyapi.co/' },
-      { title: 'Postman', href: '/examples/rest-postman' },
-      { title: 'Fetch (JavaScript)', href: '/examples/rest-fetch' },
-      { title: 'Python', href: '/examples/rest-python' },
-    ],
-  },
-  {
-    title: 'GraphQL',
-    links: [
-      { title: 'Playground', href: 'https://graphql.canopyapi.co/' },
-      { title: 'Postman', href: '/examples/graphql-postman' },
-      { title: 'Fetch (JavaScript)', href: '/examples/fetch' },
-      { title: 'GraphQL Yoga', href: '/examples/graphql-yoga' },
-      { title: 'Apollo Server', href: '/examples/apollo-server' },
-      { title: 'Python', href: '/examples/python' },
-      { title: 'Hoppscotch', href: '/examples/hoppscotch' },
-    ],
-  },
-  {
-    title: 'AI & LLMs',
-    links: [
-      { title: 'MCP Server', href: '/ai/mcp' },
-      { title: 'Canopy Skills', href: '/ai/skills' },
-    ],
-  },
-  {
-    title: 'Recipes',
-    links: [
-      { title: 'Coupon Finder', href: '/recipes/coupon-finder' },
-    ],
-  },
-  {
-    title: 'Contributing',
-    links: [
-      { title: 'How to contribute', href: '/contributing/how-to-contribute' },
-      { title: 'Affiliate Programs', href: '/contributing/affiliate-programs' },
-    ],
-  },
-]
+import navigation from '@/navigation.json'
 
 function GitHubIcon(props) {
   return (

@@ -1,6 +1,6 @@
 ---
-title: Canopy Skills
-description: Install reusable AI agent skills for querying Amazon data with the Canopy API.
+title: Canopy Skills for AI agents
+description: Install Canopy Skills so AI coding agents can query Amazon product, search, pricing, and review data through the Canopy API.
 ---
 
 [Canopy Skills](https://github.com/canopy-api/skills) are reusable, prompt-driven modules that give AI agents structured capabilities for working with the Canopy API. Install a skill once and any compatible AI agent can use it to query Amazon product data including pricing, reviews, search results, and sales estimates.

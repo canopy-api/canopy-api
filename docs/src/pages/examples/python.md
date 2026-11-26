@@ -1,6 +1,6 @@
 ---
-title: Python
-description: A simple example using python's 'requests' lib to query for Amazon data.
+title: GraphQL API with Python
+description: Query Amazon product data from the Canopy GraphQL API in Python using the requests library, with a copy-paste example.
 ---
 
 A simple example using python's 'requests' lib to query for Amazon data. You will need to modify the example to use your `API-KEY` in the request header. We have provided a **Replit** for testing or forking.

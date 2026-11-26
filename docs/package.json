@@ -1,7 +1,10 @@
 {
   "private": true,
   "scripts": {
+    "generate": "node scripts/generate-discovery.mjs",
+    "predev": "npm run generate",
     "dev": "next dev",
+    "prebuild": "npm run generate",
     "build": "next build",
     "start": "next start"
   },

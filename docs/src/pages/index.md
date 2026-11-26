@@ -1,7 +1,7 @@
 ---
 title: Getting started
-pageTitle: Getting started with Amazon Data provided by Canopy API
-description: Connect to a Canopy API endpoint in minutes and start fetching Amazon data immediately.
+pageTitle: Getting started with Canopy API - Amazon product data API
+description: Get a Canopy API key and start fetching real-time Amazon product data over REST, GraphQL, or MCP in minutes.
 ---
 
 Learn how to get started querying for Amazon data in minutes using either our GraphQL or REST API. Sign up, copy your API key, and get to work!{% .lead %}

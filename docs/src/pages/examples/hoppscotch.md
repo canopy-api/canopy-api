@@ -1,6 +1,6 @@
 ---
-title: Hoppscotch
-description: A collection of queries available to import to [Hoppscotch](https://hoppscotch.io/graphql)
+title: GraphQL API Hoppscotch collection
+description: Import the prebuilt Hoppscotch collection to explore Canopy GraphQL API queries for Amazon product data in your browser.
 ---
 
 A collection of queries available to import to [Hoppscotch](https://hoppscotch.io/graphql)

@@ -1,6 +1,6 @@
 ---
-title: Fetch (JavaScript)
-description: An example using the browser's fetch API to query for Amazon data.
+title: GraphQL API with JavaScript fetch
+description: Query Amazon product data from the Canopy GraphQL API using JavaScript's built-in fetch, with a copy-paste example and no client library.
 ---
 
 A basic example using the browser's [fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) to query for Amazon data. You will need to modify the example to use your `API-KEY` in the request header. We have provided a full example using **Codesandbox** for testing purposes.

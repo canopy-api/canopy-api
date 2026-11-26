@@ -1,6 +1,6 @@
 ---
-title: GraphQL Yoga
-description: An example using our GraphQL API with [GraphQL Yoga](https://the-guild.dev/graphql/yoga-server)
+title: Proxy the GraphQL API with GraphQL Yoga
+description: Expose Amazon product data from a Next.js API route by proxying the Canopy GraphQL API through GraphQL Yoga, with a full TypeScript example.
 ---
 
 An example using our GraphQL API with [GraphQL Yoga](https://the-guild.dev/graphql/yoga-server)
