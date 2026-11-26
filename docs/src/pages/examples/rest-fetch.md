@@ -1,6 +1,6 @@
 ---
-title: Fetch (JavaScript)
-description: An example using the browser's fetch API to query the REST API for Amazon data.
+title: REST API with JavaScript fetch
+description: Fetch Amazon product data from the Canopy REST API using JavaScript's built-in fetch, with a copy-paste example and no client library.
 ---
 
 A basic example using the browser's [fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) to query the REST API for Amazon data. You will need to modify the example to use your `API-KEY` in the request header.

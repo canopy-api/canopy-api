@@ -1,6 +1,6 @@
 ---
 title: How to contribute
-description: Our documentation, integrations and examples are [open source](https://github.com/canopy-api/canopy-api) and available for anyone to contribute.
+description: The Canopy API documentation, integrations, and examples are open source on GitHub. Learn how to report issues and open pull requests.
 ---
 
 Our documentation, integrations and examples are [open source](https://github.com/canopy-api/canopy-api) and available for anyone to contribute. We occasionally offer discounts to contributors ;)

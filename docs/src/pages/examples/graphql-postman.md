@@ -1,6 +1,6 @@
 ---
-title: Postman
-description: Try the Canopy GraphQL API using the public Postman collection.
+title: GraphQL API Postman collection
+description: Try the Canopy GraphQL API for Amazon product data without writing code, using the public Postman collection.
 ---
 
 A public [Postman GraphQL collection](https://www.postman.com/rhin-0-s-team/canopy-api-amazon-product-data-api-rest-graphql-mcp/collection/6ubxfrt/graphql) is available for sending queries without writing code.

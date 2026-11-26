@@ -1,6 +1,6 @@
 ---
-title: Coupon Finder
-description: Search Amazon products and surface any available coupons using the Canopy REST API.
+title: Amazon coupon finder recipe
+description: Search Amazon products and surface available coupons with the Canopy REST API, using a complete JavaScript example.
 ---
 
 This recipe uses the REST search endpoint to find Amazon products matching a search term, then loops through the results to list any items that have an active coupon. Useful for building deal finders, price trackers, or coupon aggregator tools.

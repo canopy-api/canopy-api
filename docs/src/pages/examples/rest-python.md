@@ -1,6 +1,6 @@
 ---
-title: Python
-description: A simple example using python's 'requests' lib to query the REST API for Amazon data.
+title: REST API with Python
+description: Fetch Amazon product data from the Canopy REST API in Python using the requests library, with a copy-paste example.
 ---
 
 A simple example using python's 'requests' lib to query the REST API for Amazon data. You will need to modify the example to use your `API-KEY` in the request header.

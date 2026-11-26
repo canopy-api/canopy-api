@@ -1,6 +1,6 @@
 ---
-title: Apollo Server
-description: An example using our GraphQL API with [Apollo Server](https://www.apollographql.com/docs/apollo-server/)
+title: Stitch the GraphQL API into Apollo Server
+description: Add Amazon product data to an Apollo Server in Next.js by stitching the Canopy API GraphQL schema into your own, with a full TypeScript example.
 ---
 
 An example using our GraphQL API with [Apollo Server](https://www.apollographql.com/docs/apollo-server/)

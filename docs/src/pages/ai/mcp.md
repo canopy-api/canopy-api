@@ -1,6 +1,6 @@
 ---
-title: Canopy API MCP
-description: Connect Claude and other MCP clients to the hosted Canopy API MCP server for read-only access to Amazon product data.
+title: Canopy API MCP server
+description: Connect Claude, Cursor, and other MCP clients to the hosted Canopy API MCP server for read-only access to live Amazon product data.
 ---
 
 The Canopy API MCP server is a hosted [Model Context Protocol](https://modelcontextprotocol.io/) server that gives AI assistants and agents direct access to Amazon product data — product lookup, search, offers, reviews, sales estimates, categories, sellers, and more.
